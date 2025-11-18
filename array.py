@@ -1,11 +1,36 @@
 import sys
-if len(sys.argv) ee 2:
-script_name - sys.argv[e]
-# initialize array with at least 11 elements so index 10 is valid
-array - [None] * 11
-array[10] - sys.argv[1]else：
-array - [1, 2, 3, 9, 7,10, 5]
-sum of_elenents - sum(array)
-print("Sum of elenents:”, sum_of_elements)
-avg_of_elements · sum_of_elenents / len(array)
-print("Average of elements:”, avg_of_elements)
+
+
+if len(sys.argv) > 1:
+    script_name=sys.argv[0]
+    scores = sys.argv[1:]
+    
+    scores = [float(x) for x in scores]
+else:
+   
+    scores = [50, 60, 70, 80, 90]
+    print("No input given, using default scores:", scores)
+
+
+total = sum(scores)
+average = total / len(scores)
+
+
+print("Scores:", scores)
+print("Sum of Scores:", total)
+print("Average of Scores:", average)
+
+
+total = sum(scores)
+average = total / len(scores)
+
+
+print("Scores:", scores)
+print("Sum of Scores:", total)
+print("Average of Scores:", average)
+
+max=max(scores)
+min=min(scores)
+
+print("Minimum : ",min)
+print("Maximum : ",max)
